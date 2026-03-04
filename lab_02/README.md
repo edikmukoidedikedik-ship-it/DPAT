@@ -13,13 +13,13 @@
 ## Системні вимоги
 * **Interpreter**: Python 3.10+
 * **ОС**: Windows 10/11, Linux або macOS
-* **Основні бібліотеки**: `pandas`, `urllib3`, `jupyter`
+* **Основні бібліотеки**: `pandas`, `urllib3`, `jupyter`, `scikit-learn`
 
 ## Структура папки
-* `data/` — завантажені CSV файли (ігноруються Git).
-* `lab_02_part1.ipynb` — код для роботи з VHI індексами.
-* `requirements.txt` — список необхідних бібліотек.
-* `.gitignore` — локальні правила ігнорування.
+* lab_02_part1.ipynb — код для роботи з VHI індексами.
+* lab_02_part2.ipynb — аналіз енергоспоживання домогосподарств.
+* requirements.txt — список залежностей для встановлення.
+* .gitignore — правила ігнорування тимчасових файлів та великих датасетів (папка data/).
 
 ## Інструкція із запуску
 1. Створіть віртуальне середовище:
@@ -34,3 +34,6 @@
 4. Запустіть Jupyter Notebook:
     ```bash
     jupyter notebook
+    3. Завантаження даних
+    
+## Для Частини 2 необхідно вручну завантажити датасет Individual Household Electric Power Consumption та розпакувати файл household_power_consumption.txt у папку lab_02/data/.
