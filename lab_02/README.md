@@ -29,6 +29,8 @@
     * Windows: .\venv\Scripts\activate
     * Linux/macOS: source venv/bin/activate
 3. Встановіть залежності:
-    * pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 4. Запустіть Jupyter Notebook:
-    * jupyter notebook
+    ```bash
+    jupyter notebook
