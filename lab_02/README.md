@@ -26,14 +26,14 @@
    ```bash
    python -m venv venv
 2. Активуйте його:
-    * Windows: ```bash .\venv\Scripts\activate
-    * Linux/macOS: ```bash source venv/bin/activate
+    ```bash 
+    .\venv\Scripts\activate
+
 3. Встановіть залежності:
     ```bash
     pip install -r requirements.txt
 4. Запустіть Jupyter Notebook:
     ```bash
     jupyter notebook
-    3. Завантаження даних
-    
+3. Завантаження даних
 ## Для Частини 2 необхідно вручну завантажити датасет Individual Household Electric Power Consumption та розпакувати файл household_power_consumption.txt у папку lab_02/data/.
