@@ -36,4 +36,4 @@
     ```bash
     jupyter notebook
 3. Завантаження даних
-# Для Частини 2 необхідно вручну завантажити датасет Individual Household Electric Power Consumption та розпакувати файл household_power_consumption.txt у папку lab_02/data/.
+### Для Частини 2 необхідно вручну завантажити датасет Individual Household Electric Power Consumption та розпакувати файл household_power_consumption.txt у папку lab_02/data/.
