@@ -20,3 +20,7 @@ lab_02/data/
 *.txt
 *.json
 *.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
