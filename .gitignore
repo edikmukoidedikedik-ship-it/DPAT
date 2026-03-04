@@ -18,6 +18,7 @@ build/
 lab_02/data/
 *.csv
 *.txt
+!requirements.txt
 *.json
 *.log
 
