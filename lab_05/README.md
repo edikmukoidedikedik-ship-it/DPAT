@@ -24,6 +24,6 @@
     pip install -r requirements.txt
 5. Запустіть скрипт додатку:
     ```bash
-    streamlit run app.py
+    streamlit run lab5.py
 
 Додаток автоматично відкриється у вашому браузері за адресою http://localhost:8501.
