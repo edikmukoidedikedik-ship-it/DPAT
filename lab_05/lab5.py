@@ -4,15 +4,10 @@ import plotly.express as px
 import glob
 import os
 
-# Налаштування сторінки
 st.set_page_config(page_title="Лабораторна робота 5", layout="wide")
 
-# ==========================================
-# 1. Завантаження даних (з кешуванням Streamlit)
-# ==========================================
 @st.cache_data
 def load_data():
-    # Шлях до папки з даними відносно lab_05
     directory = "../lab_02/data"
     path = os.path.join(directory, "*.csv")
     all_files = glob.glob(path)
@@ -68,9 +63,6 @@ df = load_data()
 if df.empty:
     st.stop()
 
-# ==========================================
-# 2. Логіка скидання фільтрів
-# ==========================================
 def reset_filters():
     st.session_state.index_choice = 'VHI'
     st.session_state.prov_choice = 'Вінницька'
@@ -82,9 +74,6 @@ def reset_filters():
 if 'index_choice' not in st.session_state:
     reset_filters()
 
-# ==========================================
-# 3. Розмітка сторінки
-# ==========================================
 col1, col2 = st.columns([1, 3]) 
 
 with col1:
@@ -106,9 +95,6 @@ with col1:
     sort_asc = st.checkbox("За зростанням", key='sort_asc')
     sort_desc = st.checkbox("За спаданням", key='sort_desc')
 
-# ==========================================
-# 4. Фільтрація та обробка даних
-# ==========================================
 filtered_df = df[
     (df['Year'] >= year_range[0]) & (df['Year'] <= year_range[1]) &
     (df['Week'] >= week_range[0]) & (df['Week'] <= week_range[1])
@@ -123,9 +109,6 @@ elif sort_asc:
 elif sort_desc:
     prov_df = prov_df.sort_values(by=index_option, ascending=False)
 
-# ==========================================
-# 5. Графіки та таблиця
-# ==========================================
 with col2:
     st.header(f"Аналіз індексу {index_option}")
     tab1, tab2, tab3 = st.tabs(["Таблиця даних", "Графік часового ряду", "Порівняння областей"])
