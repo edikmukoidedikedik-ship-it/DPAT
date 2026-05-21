@@ -1,0 +1,8 @@
+# Віртуальне середовище
+venv/
+
+# Кеш та чекпоінти Jupyter
+.ipynb_checkpoints/
+
+# Тимчасові файли Python
+__pycache__/
